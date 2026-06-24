@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portaal Instructie Zone Brugge</title>
+	<style>
+		body {background-image: url('img/backgroundSK.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
+		h1 {color: white; font-family: Calibri, Arial; font-size: 22px;}
+		p {color: white; font-family: Calibri, Arial;}
+		td {color: gray; font-family: Calibri, Arial; font-size: 18; text-align: center;}
+		table {border: 0; background-color: #0069b4;}
+		td {border: 1px solid white;}
+		a:link {color: white; background-color: transparent; text-decoration: none;}
+		a:visited {color: white; background-color: transparent; text-decoration: none;}
+		a:hover {color: gray; text-decoration: underline;}
+		td:hover {background-color: #1271ee; color: #333; border: 1px solid black}
+		
+		.infotext {background-color:#000; color:#fff; border:solid 1px SkyBlue; text-align:center; padding:10px; border-radius:10px; box-shadow: 2px 2px 2px #333; position:absolute; right:120px; bottom:40px; visibility:hidden;}
+		.infotext:after {content: " "; position: absolute; bottom: 10%; left: 100%; margin-left: 2px; border-width: 5px; border-style: solid; border-color: transparent transparent transparent #000;}
+		.b:hover .infotext {visibility:visible;}
+		.info:hover .infotext {visibility:visible;}
+				div.topcorner{position:absolute; top:5px; right: 5px;}
+		.dropbtn {background-color: #0069b4; color: white; padding: 11px; font-size: 14px; border: 1px solid white; cursor: hand;}
+		.dropbtn:hover, .dropbtn:focus {background-color: #1271ee;}
+		.dropdown {position: absolute; display: inline-block;}
+		.dropdown-content {display: none; position: absolute; background-color: #0069b4; min-width: 160px; overflow: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; border: 1px;}
+		.dropdown-content a {font-family: Calibri, Arial;color: white; padding: 11px 12px; text-decoration: none; display: block;}
+		.dropdown a:hover {background-color: #1271ee;}
+		.show {display: block;}
+
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--- <script src="script/snowstorm.js"></script> -->
+
+
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+	
+	<script type="text/javascript">
+	function showPopup(url) {
+	newwindow=window.open(url,'name','height=700,width=520,top=200,left=100,resizable');
+	if (window.focus) {newwindow.focus()}
+	}
+	</script>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="img/b.png">
+	</head>
+	<body>
+	
+	<div id="divStayTopLeft" style="position:absolute">
+	
+	
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">HLT <i class="fa fa-caret-down"></i></button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2654039" target="_blank">HLT I</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2654043" target="_blank">HLT II.A</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2654040" target="_blank">HLT II.B</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2654044" target="_blank">HLT III</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2654041" target="_blank">HLT IV</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2809530" target="_blank">HLT V</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2654153" target="_blank">HLT VI</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2654049" target="_blank">HLT VII.A</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/1884441" target="_blank">O.B.</a>
+		<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/2655475" target="_blank">Memento</a>
+		<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/General/17.ADMINISTRATIE/HLT%20compile%20NL%2014-06-2026%20(V15-06-2026).pdf" target="_blank">HLT Compilé</a>
+		
+	  </div>
+	</div>
+	
+	</div>
+	
+	
+	<script type="text/javascript">
+	function JSFX_FloatTopLeft()
+	{
+		var startX = 10, startY = 60;
+		var ns = (navigator.appName.indexOf("Netscape") != -1);
+		var d = document;
+		var px = document.layers ? "" : "px";
+		function ml(id)
+		{
+			var el=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];
+			if(d.layers)el.style=el;
+			el.sP=function(x,y){this.style.left=x+px;this.style.top=y+px;};
+			el.x = startX; el.y = startY;
+			return el;
+		}
+		window.stayTopLeft=function()
+		{
+			var pY = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+			ftlObj.y += (pY + startY - ftlObj.y)/8;
+			ftlObj.sP(ftlObj.x, ftlObj.y);
+			setTimeout("stayTopLeft()", 40);
+		}
+		ftlObj = ml("divStayTopLeft");
+		stayTopLeft();
+	}
+	JSFX_FloatTopLeft();
+	</script>
+
+	<center>
+		<h1><img src="img/logo b.png" width="40"> Portaal Instructie Zone Brugge</h1>
+	<table>
+		<tr>
+			<td rowspan=2>
+				<img src="img/intraweb.png" width=25>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/WeBe" target="_blank" title="WeBe">
+				<img src="img/webe.png" width=75><br>
+				WeBe-portaal</a>
+			</td>
+ 			<td width="135" height="135">
+            			<a href="https://gpri.intern-belgianrail.be/index.html" target="_blank" title="GPRi">
+            			<img src="img/gpri.png" width=80><br>
+            			GPRi</a>
+          		</td>
+          		<td width="135" height="135">
+            			<a href="https://belgianrail.reach360.com/learn/my-learning" target="_blank">
+            			<img src="img/reach.gif" width=75><br>
+           			Reach 360</a>
+			</td>
+          		<td width="135" height="135">
+            			<a href="https://xeim.intern-belgianrail.be/otcs/llisapi.dll/app/nodes/1875343" target="_blank">
+              			<img src="img/eim.png" width=75><br>
+              			EIM</a>
+            		</td>
+            		<td  width="135" height="135">
+              			<a href="https://performancemanager.successfactors.eu/sf/learning?company=nmbsnation&loginMethod=SSO" target="_blank">
+              			<img src="img/youtrain.png" width=75><br>
+              			YouTrain</a>
+            		</td>
+            		<td width="135" height="135">
+              			<a href="https://myapps.intern-belgianrail.be/myapps#Shell-home" target="_blank">
+      				<img src="img/myapps3.jpg" width=75><br>
+              			My Apps</a>
+            		</td>
+          	</tr>
+          	<tr>
+            		<td width="135" height="135">
+              			<a href="https://nmbssncb-prod.planoncloud.com/" target="_blank" title="Gebouwgerelateerde problemen melden (toegang vereist)">
+              			<img src="img/planon.png" width=75><br>
+              			PlanOn</a>
+            		</td>
+            		<td width="135" height="135">
+             			<a href="https://amelie.intern-belgiantrain.be/Identity/Account/Login?ReturnUrl=%2F" target="_blank">
+             			<img src="img/amelie.png" width=75><br>
+             			Amelie</a>
+            		</td>
+            		<td width="135" height="135">
+             			<a href="https://atms.intern-belgiantrain.be/" target="_blank" title="ATMS">
+				<img src="img/atms.png" width=75><br><br>
+             			ATMS</a>
+            		</td>
+            		<td width="135" height="135">
+             			<a href="https://bportal.belgianrail.be/irj/portal?NavigationTarget=navurl://9b0eb1de615e8e4b8ea16d5f066d9b77" target="_blank">
+             			<img src="img/welzijnsregister.png" width=75><br>
+             			Welzijnsregister</a>
+            		</td>
+            		<td width="135" height="135">
+				<a href="https://nmbssncbprod.service-now.com/brail/?id=index" target="_blank" title="Service Now - voor alle IT-aanvragen">
+				<img src="img/myservices.png" width=75><br>
+				Service Now</a>
+            		</td>
+			<td width="135" height="135">
+             			<a href="https://oasisweb.intern-belgianrail.be/" target="_blank" title="Grafieken rollend materieel">
+             			<img src="img/oasis.png" width=75><br>
+             			Oasis</a>
+            		</td>
+            	</tr>
+          </table>
+          <br>
+          <table>
+           	<tr>
+			<td rowspan=2>
+       				<img src="img/sharepointinstructie.png" width=25>
+       			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/:x:/r/sites/InstructieTCTKustBrugge/Documents%20partages/General/10.DIENSTTABEL%20TOSCI-TSI/DIENSTTABEL_2026_v20250107.xlsx?d=w106e23f270a446049bb9d76ab20c2ae4&csf=1&web=1&e=DbrFfq" target="_blank">
+				<img src="img/dt26.png" width=75><br>
+				Diensttabel 2026</a>		
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/:x:/r/sites/InstructieTCTKustBrugge/Documents%20partages/General/10.DIENSTTABEL%20TOSCI-TSI/DIENSTTABEL_2027_v20260324.xlsx?d=wbd4fd64f769f482eb82295291b2aaa2e&csf=1&web=1&e=Vmal67" target="_blank">
+				<img src="img/dt27.png" width=75><br>
+				Diensttabel 2027</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/:x:/r/sites/InstructieTCTKustBrugge/_layouts/15/Doc.aspx?sourcedoc=%7B010566BB-EA29-410A-A151-0C43F842BBD4%7D&file=Monitoring%20Begeleidingen%20FR%20en%20FSD%202026.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1" target="_blank">
+				<img src="img/excel.png" width=75><br>
+				Begeleidingen</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/:x:/r/sites/InstructieTCTKustBrugge/_layouts/15/Doc.aspx?sourcedoc=%7B5ED2C8E3-E92E-4585-ABCD-31900E75B27E%7D&file=Aanvraag%20Ritontledingen%20FR%20en%20FSD%202026.xlsx&action=default&mobileredirect=true" target="_blank">
+				<img src="img/excel.png" width=75><br>
+				Ritontledingen</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/:x:/r/sites/InstructieTCTKustBrugge/Documents%20partages/General/18.CERTIFICATIE-BEGELEIDING/18.3.BEGELEIDINGEN/18.33.Begeleidingen%20leerlingen/Begeleidingen%20leerlingen.xlsx?d=w97aa29a77b274cf2a0097c474bb3479f&csf=1&web=1&e=xUUNPl" target="_blank" title="Begeleiding Leerlingen">
+				<img src="img/excel.png" width=75><br>
+				BEG Leerlingen</a>
+			</td>
+			<td width="135" height="135">
+             			<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/General/11.DRAAIBOEK%20INSTRUCTIE/0.0.TCT_DRAAIBOEK%20INSTRUCTIE.pdf" target="_blank" title="Het antwoord op alle vragen">
+             			<img src="img/draaiboek.png" width=75><br>
+             			Draaiboek</a>
+            		</td>
+		</tr>
+		<tr>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/Draaiboek%20instructie%20TCT%20kust-Brugge%20under%20construction/1.5.Telefoonlijst%20District%20NW_v42.pdf" target="_blank" title="Telefoonlijst District NW">
+				<img src="img/contacten.png" width=75><br>
+				Telefoonlijst</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FInstructieTCTKustBrugge%2FDocuments%20partages%2FGeneral&viewid=f5e31a05%2D26dd%2D4b02%2Da69a%2D60771cd0d50c" target="_blank" title="Sharepoint Instructie Zone Brugge">
+				<img src="img/sharepoint3.png" width=75><br>
+				Instructie</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://m365.cloud.microsoft.com/" target="_blank">
+				<img src="img/m365.png" width="75"><br>
+				M365 Copilot</a>
+			</td>
+			</td>
+			<td width="135" height="135">
+				<a href="https://apps.powerapps.com/play/e/4ac71ce1-1fae-4c28-9fd1-d50ad727a492/a/31f51db4-fb03-490c-a2cb-72ec2bd48918?tenantId=7919ea65-4c52-4980-bfcd-ce7ffd32f1ea&hint=464fcc8f-c733-4821-b825-bd825eb09a76&sourcetime=1700134247275" target=_blank>
+				<img src="img/gpr.png" width="75"><br>
+				GPR-VL</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/:x:/r/sites/InstructieTCTKustBrugge/Documents%20partages/General/18.CERTIFICATIE-BEGELEIDING/18.1.CONTINUE%20EVALUATIE/Overzicht%20Bilangesprekken%20FR.xlsx?d=w3bb746a888f849078cf4f6801a2a5959&csf=1&web=1&e=1KUe5z" target="_blank" title="Overzicht bilan FR">
+				<img src="img/excel.png" width=75><br>
+				Overzicht Bilan FR</a>
+						</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/:x:/r/sites/InstructieTCTKustBrugge/Documents%20partages/General/15.INFO%20OPLEIDINGEN/Operationele%20Instructies%202025/Formulierenboek%20voor%20opleiders%20V4.pdf" target="_blank" title="Formulierenboek">
+				<img src="img/Formulierenboek.png" width=60><br>
+				Formulierenboek</a>
+						</td>
+		</tr>
+	</table>
+	<br>
+	
+	<table>
+		<tr>
+			<td rowspan=2>
+				<img src="img/nogsharepoints.png">
+			</td>
+			<td width="135" height="135">
+            			<a href="https://belgianrail.sharepoint.com/sites/CorporateWellbeing" target="_blank" title="Corporate Well-being - Alle info voor API">
+            			<img src="img/api.png" width=75><br>
+            			Sharepoint API</a>
+          		</td>
+			<td width="135" height="135">
+				<a href="https://semes-dashboard.belgiantrain.be/" target="_blank" title="Sharepoint SEMES">
+				<img src="img/semes.gif" width=75><br>
+				SEMES 2.0</a>	
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/FichesDistrictNW" target="_blank" title="Fiches District NW">
+				<img src="img/fichesNW.jpg" width=75><br>
+				Dienstfiches NW</a>	
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/ControleEnergieImmobilisatie/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FControleEnergieImmobilisatie%2FShared%20Documents%2FGeneral%2FFR&viewid=feee5d62%2D9c95%2D4e10%2Dbaad%2D23d140ba88eb" target="_blank" title="Controles energie en immobilisatie">
+				<img src="img/eco.png" width=75><br>
+				ECO-stabling NW</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/DistrictNWBundelsenTractie" target="_blank" title="Sharepoint District NW">
+				<img src="img/fichesNW.jpg" width=75><br>
+				District NW
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/TransportOperationsProcessManagement/Process%20Documents/Forms/AllItems.aspx?viewid=a4cc865e%2D0bd9%2D4b56%2Db450%2D313c3cffeee6" target="_blank" title="... is de kolen niet waard">
+				<img src="img/kolen.jpg" width=75>Sharepoint SOP</a>
+			</td>
+		</tr>
+		<tr>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/FichesDistrictNW/SitePages/Dashboard%20FR%20-%20overzichtspagina.aspx" target="_blank" title="Dashboard besturingspersoneel Zone Brugge">
+				<img src="img/dashboard.png" width=75>Dashboard Zone FR</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/FichesDistrictNW/SitePages/Dashboard%20NW%20-%20overzichtspagina.aspx" target="_blank" title="Dashboard besturingspersoneel District NW">
+				<img src="img/dashboard.png" width=75>Dashboard NW</a>
+			</td>
+			<td width="135" height="135">
+			</td>
+			<td width="135" height="135">
+			</td>
+			<td width="135" height="135">
+			</td>
+			<td width="135" height="135">
+			</td>
+		<tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<td rowspan=3>
+       				<img src="img/gadgets.png" width=25>
+       			</td>
+			<td width="135" height="135">
+				<a href="https://pbvnv401.belgianrail.be/Departure/Station?RefName=BRUGG" target="_blank">
+				<img src="img/brugge2.png" width=75><br>
+				Treinen Brugge</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://pbvnv401.belgianrail.be/Departure/Station?RefName=OOSTE" target="_blank">
+				<img src="img/oostende2.png" width=75><br>
+				Treinen Oostende</a>
+			</td><td width="135" height="135">
+				<a href="https://dlexiconweustorage.z6.web.core.windows.net/eDriveSupport/index.html#!/PageNL" target="_blank">
+				<img src="img/edrive_support.png" width=75><br>
+				eDrive Support</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://dlexiconweustorage.z6.web.core.windows.net/Driver-tools/#!/PageNL" target="_blank">
+				<img src="img/dtools.png" width=75><br>
+				Driver Tools</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://edrive.intern-belgiantrain.be/performances" target="_blank">
+				<img src="img/favicon.ico" width=75><br>
+				eDrive Portaal</a>
+			</td>
+			
+			<td width="135" height="135">
+				<a href="https://ebpportal.infrabel.be/" target="_blank">
+				<img src="img/ebp.png" width=75><br>
+				EBP-Viewer</a>
+			</td>
+		</tr>
+		<tr>
+			<td width="135" height="135">
+				<a href="https://bertd.intern-belgianrail.be/" target="_blank" title="Telemetrie krachtvoertuigen">
+				<img src="img/bertd.png" width=75><br>
+				BeRTD</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://transurb.atlassian.net/servicedesk/customer/portals" target="_blank" title="Jira - Voor simpactoperatoren">
+				<img src="img/jira.png" width=75><br>
+				Jira</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://myapps.intern-belgianrail.be/myapps#ZNMBSHCMBikeToWork-manage" target="_blank" title="Bike To Work - Vraag je fietsvergoeding aan">
+				<img src="img/biketowork.svg" width=75><br>
+				Bike To Work</a>
+			</td>
+			<td width="135" height="135">
+				<a href="http://b-aaportal.corp-belgianrail.be/" target="_blank" title="Softwareportaal (downloaden Apollo - Cari ...)">
+				<img src="img/download.png" width=75><br>
+				Softwareportaal</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://app.powerbi.com/home" target="_blank" title="PowerBI">
+				<img src="img/powerbi.png" width=75><br>
+				PowerBI</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://raillingo.github.io/" target="_blank" title="RailLingo - Oefen je Frans!">
+				<img src="img/raillingo3.png" width=75><br>	
+				RailLingo</a>
+			</td>
+		</tr>
+		<tr>
+			<td width="135" height="135">
+            			<a href="page/disco.html" target="_blank" title="D.I.S.C.O.-schermen">
+				<img src="img/disco.gif" width=75><br>
+				D.I.S.C.O.</a>
+          		</td>
+			<td width="135" height="135">
+				<a href="https://cassandra.intern-belgiantrain.be/bwise/" target="_blank" title="Register voor vertrouwenspersonen">
+				<img src="img/BWise.png" width=75><br>
+				B-Wise</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://opendata.infrabel.be/map/tps_infrabel/?location=9,50.79465,4.87793&basemap=jawg.light" target="_blank">
+				<img src="img/etcs1.png" width=75><br>
+				ETCS-kaart</a>				
+			</td>
+			<td width="135" height="135">
+				<a href="https://contactdep.intern-belgiantrain.be/" target="_blank">
+				<img src="img/drm.png" width=75><br>
+				Contact DRM</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://app.powerbi.com/Redirect?action=OpenReport&appId=c7c4f125-059d-4a5a-89bd-51447460d690&reportObjectId=5dbffef5-a333-465a-80d3-d1834d46da10&ctid=7919ea65-4c52-4980-bfcd-ce7ffd32f1ea&reportPage=ReportSection8bd26ecce65600709052&pbi_source=appShareLink&portalSessionId=6b1bbd5c-8424-4340-ab0a-3d5cc155507f" target="_blank">
+					<img src="img/volgfiche.png" width="75"><br>
+					Driver Card</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://app.powerbi.com/groups/me/apps/9eb44a15-234f-40e3-965d-277ea5ac96bb/reports/057b8203-07af-482d-9981-05e782123f13/ReportSection4917a6324ce420eb3328?experience=power-bi" target="_blank">
+				<img src="img/eco2.png" width="75"><br>
+				Energie Dashboard</a>
+			</td>
+		</tr>
+	</table>
+	<br>
+	
+	<table>
+		<tr>
+			<td rowspan=1>
+       				<img src="img/formulieren.png" width=25>
+       			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/Draaiboek%20instructie%20TCT%20kust-Brugge%20under%20construction/1.13.C4.65-Bijlage%208%20Interventierapport%20PsyHvr%20na%20schokkende%20gebeurtenis_20250510.PDF" target="_blank">
+				<img src="img/api.png" width=75><br>
+				Schokkende gebeurtenis</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/Draaiboek%20instructie%20TCT%20kust-Brugge%20under%20construction/1.19.FIR%20NL%20V6.pdf" target="_blank">
+				<img src="img/fir.png" width=75><br>
+				FIR (pdf)</a>	
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/Draaiboek%20instructie%20TCT%20kust-Brugge%20under%20construction/1.19.FIR%20NL%20V6.docx" target="_blank">
+				<img src="img/fir.png" width=75><br>
+				FIR (word)</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://hr-rail.be/nl/hr-rail/praktische-info/formulieren" target="_blank">
+				<img src="img/hrform.png" width=75><br>
+				HR Forms</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://hr-railcare.be/nl/Houders/Formulieren-en-andere-documenten-om-te-downloaden" target="_blank">
+				<img src="img/railcare.png" width=75><br>
+				Railcare Forms</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/General/17.ADMINISTRATIE/D233.pdf" target="_blank" >
+				<img src="img/d233.png" width="70"><br>
+				D233</a>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<td rowspan=1>
+       				<img src="img/elearnings.png" width=25>
+       			</td>
+			<td width="135" height="135">
+				<a href="file://belgianrail.be/fileserver/B-TO/B-TO.2_BIB/Documentation%20-%20Documentatie/test/MESA26B_e-Learning/story.html" target="_blank">
+				<img src="img/mesa.png" width="75"><br>
+				MESA 26B</a>
+			</td>
+			<td width="135" height="135">
+				<a href="file://belgianrail.be/fileserver/B-TO/B-TO.2_BIB/Documentation%20-%20Documentatie/test/eLearning%20GPRi%20lnstructeurs%20-%20V3/story.html" target="_blank">
+				<img src="img/gpri.png" width="75"><br>	
+				GPRi</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/General/17.ADMINISTRATIE/HLT%20compile%20NL%2014-06-2026%20(V15-06-2026).pdf" target="_blank">
+				<img src="img/hlt.png" width="75"><br>
+				HLT Compilé</a>
+			</td>
+			<td width="135" height="135">
+				<a href="https://belgianrail.sharepoint.com/sites/InstructieTCTKustBrugge/Documents%20partages/General/17.ADMINISTRATIE/HLT_VI_-_Voorschriften_betreffende_de_remming_van_de_treinen.pdf" target="_blank">
+				<img src="img/hltvi.png" width="75"><br>
+				HLT VI</a>
+			</td>
+			<td width="135" height="135">
+				<br>
+			</td>
+			<td width="135" height="135">
+				<br>
+			</td>
+		</tr>
+	</table>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<p>Opmerkingen of toevoegingen?</p>
+	<p><a href="mailto:koen.ocquet@belgiantrain.be">koen.ocquet@belgiantrain.be</a></p>
+	</center>
+
+				<!-- <a href="ms-excel:ofe|u|file://belgianrail.be/fileserver/B-TO/B-TO.0_CTC/B-TO.0W%20District%20NW/TCT%20BRUGGE/TBT/TBT/SSP/Repertorium%20SSP%20FR.xlsx" target="_blank" title="Repertorium SSP">
+				<img src="img/excel.jpg" width=75><br>
+				Repertorium SSP</a>	-->
+</body>
+</html>
